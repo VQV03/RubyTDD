@@ -1,0 +1,9 @@
+https://rspec.info/
+https://www.betterspecs.org/
+
+Setup: Colocar o objeto para ser testado
+Exercise: Interagir com o objeto em teste
+Verify: Verifica o resultado do teste
+Teardown: Voltar o sistema no estado pre teste
+
+Para usar textes filtrados vc usa: rpec . -t "nome do filtro", ex rspec . -t collection
