@@ -23,8 +23,8 @@
   <%= f.file_field :avatar %><br />
 
   <%= f.label :smoker %> <br />
-  <% { 'S': 'Sim', 'N': 'Não' }.each do |key, value| %>
+  <% { "S": "Sim", "N": "Não" }.each do |key, value| %>
     <%= f.radio_button :smoker, key %> <%= value %> <br />
   <% end %>
-  <%= f.submit 'Atualizar Cliente' %>
+  <%= f.submit "Atualizar Cliente" %>
 <% end %>

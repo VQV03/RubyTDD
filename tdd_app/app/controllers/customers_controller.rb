@@ -15,7 +15,7 @@ class CustomersController < ApplicationController
 
   def update
     if @customer.update(customer_params)
-      redirect_to customer_path(@customer.id), notice: 'Cliente atualizado com sucesso!'
+      redirect_to customer_path(@customer.id), notice: "Cliente atualizado com sucesso!"
     else
       render :edit
     end
@@ -26,7 +26,7 @@ class CustomersController < ApplicationController
     @customer = Customer.new(customer_params)
 
     if @customer.save
-      redirect_to customers_path, notice: 'Cliente Cadastrado com Sucesso'
+      redirect_to customers_path, notice: "Cliente Cadastrado com Sucesso"
     else
       render :new
     end
@@ -38,7 +38,7 @@ class CustomersController < ApplicationController
 
   def destroy
     if @customer.destroy
-      redirect_to customers_path, notice: 'Cliente excluído com sucesso!'
+      redirect_to customers_path, notice: "Cliente excluído com sucesso!"
     else
       render :index
     end
